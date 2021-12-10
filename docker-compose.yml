@@ -3,7 +3,7 @@ services:
     build: ./
     restart: always
     labels:
-      - traefik.enable=true
+      - traefik.enable='true'
       - traefik.http.services.app.loadbalancer.server.port=5000
       - traefik.http.routers.app-http.entrypoints=http
       - traefik.http.routers.app-http.rule=Host(`testingapi.tk`)
